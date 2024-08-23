@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
+import logo1 from '../assets/img/logo2.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -36,9 +38,10 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          {/* <Navbar.Brand href="/">
-            <h1 style={{color: "white"}}>Hi There,</h1>
-          </Navbar.Brand> */}
+          <Navbar.Brand href="/">
+            <img src={logo1} />
+            {/* <h1 style={{color: "white"}}>LOGO</h1> */}
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -50,6 +53,7 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
+                <a target="blank" href="https://github.com/sunitsarkar"><img src={navIcon4} alt="" /></a>
                 <a target="blank" href="https://www.linkedin.com/in/srkr99/"><img src={navIcon1} alt="" /></a>
                 <a target="blank" href="https://www.facebook.com/profile.php?id=100090071738445&mibextid=ZbWKwL"><img src={navIcon2} alt="" /></a>
                 <a target="blank" href="https://www.instagram.com/sunitskr?igsh=cGMzb2twcmszZHEz"><img src={navIcon3} alt="" /></a>
