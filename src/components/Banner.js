@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,7 +58,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Sunit`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm a Full-stack web developer. With almost 2years of experience. Passionate about crafting elegant and efficient web applications, with a keen eye for detail and a love for clean code. I thrive on solving complex problems and delivering innovative solutions that drive business success.</p>
+                  <p>I'm a Full-stack web developer. With over 2 years of experience. Passionate about crafting elegant and efficient web applications, with a keen eye for detail and a love for clean code. I thrive on solving complex problems and delivering innovative solutions that drive business success.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
