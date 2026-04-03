@@ -657,7 +657,7 @@ function Footer() {
       zIndex:1, position:"relative", flexWrap:"wrap", gap:12,
     }}>
       <span style={{ fontFamily:"var(--font-mono)", color:"var(--muted)", fontSize:12 }}>
-        © 2026 Sunit Sarkar — Electrical Engineer
+        © 2025 Sunit Sarkar — Electrical Engineer
       </span>
       <span style={{ fontFamily:"var(--font-mono)", color:"var(--muted)", fontSize:12 }}>
         Kolkata, India
